@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'o!8uv1z8)_s@xt8f6h-i6)gnxkvefy
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -123,7 +123,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATIC_DIR = [
-    os.path.join(BASE_DIR, STATIC_URL)
+    os.path.join(BASE_DIR, 'static')
 ]
 
 
