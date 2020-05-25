@@ -18,6 +18,15 @@ class HomeView(View):
         return render(request, 'chartjs/index.html')
 
 
+class TopTenUser(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'chartjs/topTenUser.html')
+
+
+class UserProfile(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'chartjs/userProfile.html')
+
 class ChartData(APIView):
     authentication_classes = []
     permission_classes = []

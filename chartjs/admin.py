@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import OrganizationUser, Date
+
+admin.site.register(OrganizationUser)
+admin.site.register(Date)

@@ -33,9 +33,6 @@
         </a>
         <a href="#" class="simple-text logo-normal">
           My Dashboard
-          <!-- <div class="logo-image-big">
-            <img src="../static/img/logo-big.png">
-          </div> -->
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -47,12 +44,18 @@
             </a>
           </li>
           <li>
-          </li>
-          <li>
-            <a href="#">
+            <a href="{% url 'top_ten_user' %}">
               <i class="nc-icon nc-bell-55"></i>
               <p>Notifications</p>
             </a>
+
+          </li>
+          <li>
+            <a href="{% url 'user_profile' %}">
+              <i class="nc-icon nc-bell-55"></i>
+              <p>User Profile</p>
+            </a>
+
           </li>
         </ul>
       </div>
